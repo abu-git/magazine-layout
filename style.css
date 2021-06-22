@@ -11,3 +11,49 @@
     --fs-500: 1.5rem;
     --fs-400: 1.25rem;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    line-height: 1.6;
+}
+
+h1,
+blockquote {
+    font-family: var(--ff-heading);
+    font-weight: 900;
+}
+
+h1 {
+    font-size: var(--fs-xl);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+article {
+    display: grid;
+}
+
+article > *:not(img) {
+    padding: 0 2rem;
+}
